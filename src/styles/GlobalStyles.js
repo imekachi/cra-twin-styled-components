@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 const CustomStyles = createGlobalStyle`
   body {
     -webkit-tap-highlight-color: ${theme`colors.purple.500`};
-    ${tw`antialiased`}
+    ${tw`bg-gray-200 text-gray-800`};
   }
 `
 
