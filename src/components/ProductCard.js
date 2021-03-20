@@ -8,7 +8,7 @@ const Label = styled.label(({ active }) => [
 const Radio = tw.input`hidden`
 
 const Button = styled.button(({ variant }) => [
-  tw`h-10 flex items-center justify-center rounded-md`,
+  tw`h-10 flex items-center justify-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2`,
   variant === 'primary' ? tw`bg-black text-white` : tw`border border-gray-300`,
 ])
 
@@ -27,7 +27,7 @@ export default function ProductCard() {
           alt=""
         />
       </div>
-      <form tw="flex-auto p-6">
+      <form tw="flex-auto p-6" onSubmit={(event) => event.preventDefault()}>
         <div tw="flex flex-wrap">
           <h1 tw="flex-auto text-xl font-semibold">Classic Utility Jacket</h1>
           <div tw="text-xl font-semibold text-gray-500">$110.00</div>
@@ -62,7 +62,7 @@ export default function ProductCard() {
             Add to bag
           </Button>
           <Button
-            tw="flex-none w-9 text-gray-400"
+            tw="flex-none w-9 text-gray-400 hover:text-red-500"
             type="button"
             aria-label="like"
           >
