@@ -20,7 +20,7 @@ export default function ProductCard() {
 
   return (
     <div tw="sm:flex bg-white rounded-2xl shadow-md">
-      <div tw="h-48 relative overflow-hidden rounded-t-2xl sm:flex-none sm:w-48 sm:h-auto sm:rounded-t-none sm:rounded-l-2xl">
+      <div tw="h-48 relative overflow-hidden rounded-t-2xl sm:flex-none sm:w-48 sm:h-auto sm:rounded-tr-none sm:rounded-l-2xl">
         <img
           tw="absolute inset-0 w-full h-full object-cover"
           src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.0f108046e151c8576017eaf383406fe6.jpg"
